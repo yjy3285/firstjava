@@ -26,20 +26,20 @@ public class TwoArrayLab1 {
 	        }
 	            System.out.println();
 	        
-		    System.out.print("오른쪽 대각선 데이터들 : ");
+		    System.out.print("왼쪽 대각선 데이터들 : ");
 	        for (int i = 0; i < nums.length; i++) {
 	            System.out.print(nums[i][i] + " ");
 	       }
 	        System.out.println();
 	        
-	        System.out.print("왼쪽 대각선 데이터들 : ");
+	        System.out.print("오른쪽 대각선 데이터들 : ");
 	        
 	        for (int i = 0; i < nums.length; i++) {
 	            System.out.print(nums[i][nums.length - 1 - i] + " ");
-		
-		
-		
+	        }
+	        
 	}
-
 }
-}
+	            
+		
+		

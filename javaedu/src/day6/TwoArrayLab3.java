@@ -7,7 +7,7 @@ public class TwoArrayLab3 {
             {5, 2, 1, 0, 2, 3, 6}, // 1주차
             {4, 3, 2, 1, 1, 0, 5}, // 2주차
             {3, 1, 2, 1, 3, 1, 3}, // 3주차
-            {4, 3, 1, 0, 4, 2, 7}  // 4주차
+            {4, 3, 1, 0, 4, 2, 7}  // 4주차                                                                                                                                                                                                                                                                       
         };
 
         
@@ -25,9 +25,9 @@ public class TwoArrayLab3 {
         
         for (int i = 0; i < gameTime.length; i++) {
             for (int j = 0; j < gameTime[i].length; j++) {
-                weekSum[i] += gameTime[i][j]; 
-            }
-        }
+                weekSum[i] += gameTime[i][j];                              
+            }                   
+        }                         
 
         
         String[] days = {"일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"};

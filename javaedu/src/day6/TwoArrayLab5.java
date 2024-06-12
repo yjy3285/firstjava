@@ -32,7 +32,10 @@ public class TwoArrayLab5 {
     }
 }
     
-        
+        /*int num=1;
+         * for(int col=0; col <nums[0].length;col++] //col이 열 row가 
+         *  for(int row=col; row<nums.length-col;row++)
+         *      nums[row][col]=num++;*/
         
 
    

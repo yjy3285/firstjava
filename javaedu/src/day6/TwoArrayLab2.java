@@ -7,6 +7,17 @@ public class TwoArrayLab2 {
 		        {'C', 'C', 'B', 'B'},
 		        {'D', 'A', 'A', 'D'}
 		};
+		 /*int[]ary = new int[4];
+		  * 
+		  * for(int row=0; row<a1.length;row++) {
+		  *  for(int col =0; col<a1[row].length; col++) {
+		  *   ary[a1[row][col]-65]+=1;
+		  *   }
+		  *   }
+		  *   for(int i=0;i<ary.length;i++) {
+		  *   system.out.printf("%c는 %d개 입니다",65,ary[i]);
+		   */
+		  
 		 
 	        int countA = 0;
 	        int countB = 0;
