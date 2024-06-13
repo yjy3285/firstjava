@@ -2,7 +2,7 @@ package day7;
 
 public class MethodLab10 {
 
-    // 배열의 element 값을 배수로 만들어 변경하는 메서드
+    
     public static void powerArray(int[] array, int multiple) {
         if (multiple < 2 || multiple > 5) {
             return;
@@ -12,7 +12,7 @@ public class MethodLab10 {
         }
     }
 
-    // main 메서드
+    
     public static void main(String[] args) {
         int[] a1 = { 1, 2, 3, 4, 5 };
         MethodLab7.printArray(a1);

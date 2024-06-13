@@ -2,19 +2,19 @@ package day7;
 
 public class MethodLab6 {
 
-    // 배열의 가장 큰 값을 리턴하는 메서드
+    
     public static int maxNumArray(int[] array) {
         int max = array[0];
     	
         for (int num : array) {
-            if (num > max) {
+            if (num > max) { //꺼내온 데이터가 max 보다 크면 그것을 max로 바꾸주면 되는 것.
                 max = num;
             }
         }
         return max;
     }
 
-    // main 메서드
+    
     public static void main(String[] args) {
         int[] array1 = {10, 20, 30};
         int[] array2 = {100, 500, 300, 200, 400};
