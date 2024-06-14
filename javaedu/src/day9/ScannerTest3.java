@@ -1,4 +1,4 @@
-package day8;
+package day9;
 
 import java.util.Scanner;
 public class ScannerTest3 {
@@ -12,7 +12,7 @@ public class ScannerTest3 {
 		double number3 = sc.nextDouble();
 		double number4 = sc.nextDouble();
 		System.out.printf("합 : %.2f%n", number3 + number4);
-		sc.close();
+		sc.close(); //더이상 사용하지 않을 때는 close 필수
 	}
 }
 

@@ -1,4 +1,4 @@
-package day8;
+package day9;
 
 public class CardTest{
 	public static void main(String args[]){	
@@ -9,15 +9,15 @@ public class CardTest{
 		c2.kind = "Spade";
 		c2.number = 4;		
 		System.out.println("c1은 " + c1.kind + ", " + c1.number 
-				+ "이며, 크기는 (" + c1.width + ", " + c1.height + ")");
+				+ "이며, 크기는 (" + Card.width + ", " + Card.height + ")");
 		System.out.println("c2는 " + c2.kind + ", " + c2.number
-				+ "이며, 크기는 (" + c2.width + ", " + c2.height + ")");	
+				+ "이며, 크기는 (" + Card.width + ", " + Card.height + ")");	
 		Card.width = 50;
 		Card.height = 80;
 		System.out.println("c1은 " + c1.kind + ", " + c1.number 
-				+ "이며, 크기는 (" + c1.width + ", " + c1.height + ")" );
+				+ "이며, 크기는 (" + Card.width + ", " + Card.height + ")" );
 		System.out.println("c2는 " + c2.kind + ", " + c2.number 
-				+ "이며, 크기는 (" + c2.width + ", " + c2.height + ")" );
+				+ "이며, 크기는 (" + Card.width + ", " + Card.height + ")" );
 	}
 }
 
