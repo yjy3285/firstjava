@@ -10,6 +10,9 @@ public class PolyTest {
 		printObjectInfo(new day9.Card());
 		printObjectInfo(new int[10]); // int 타입이면 [I
 		printObjectInfo(new double[] { 10.5, 3.14 }); // double형이면 [D 등 객체전달 가능/조상,자손의 객체도 참조가능
+		printObjectInfo(100); //Java 5 Auto Boxing 구문
+		printObjectInfo('가');
+		printObjectInfo(true);
 
 	}
 
