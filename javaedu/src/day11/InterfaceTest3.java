@@ -4,7 +4,7 @@ interface InterCalculator {
 
 	int add(int x, int y);
 
-	int sub(int x, int y);
+	int sub(int x, int y); //abstract 메서드
 
 	default int mul(int x, int y) {
 		return x * y;
@@ -46,7 +46,7 @@ public interface InterfaceTest3 {
 		System.out.println("5 * 3 = " + cal.mul(5, 3));
 		System.out.println("5 + 3 = " + cal.add(5, 3));
 		System.out.println("5 - 3 = " + cal.sub(5, 3));
-		System.out.println("5 - 3 = " + ((Calculator)cal).div(5, 3));
+		System.out.println("5 / 3 = " + ((Calculator)cal).div(5, 3));
 		InterCalculator.print();		
 	}
 }

@@ -24,7 +24,7 @@ abstract class Shape3 {
 class Circle3 extends Shape3 implements Printable {
 	int page;
 
-	void draw() {
+	void draw() { //draw 오버라이딩
 		System.out.println(color + " 원을 그리는 기능");
 	}
 
@@ -63,8 +63,9 @@ public class InterfaceTest1 {
 	}
 
 	static void printOut(Printable prt) {
+		
 		prt.setPage(100);
-		((Shape3)prt).setColor("파란색");
+		((Shape3)prt).setColor("파란색"); //형변환해서 setcolor는 가능
 		if (prt.isAvailable())
 			prt.print(Printable.PRINT_TYPE2);
 	}
