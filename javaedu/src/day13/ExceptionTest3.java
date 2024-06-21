@@ -3,7 +3,7 @@ import java.util.Random;
 class TestException extends Exception {
 	 private static final long serialVersionUID = 1L;	 
 	TestException(String message){
-		super(message);
+		super(message); //super 호출안하면 조상의 아규먼트 안받는 생성자로 호출됨 ->에러메세지 출력
 	}
 }
 public class ExceptionTest3 {

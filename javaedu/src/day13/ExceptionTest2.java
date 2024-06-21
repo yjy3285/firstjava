@@ -7,6 +7,7 @@ public class ExceptionTest2 {
 			int num2 = Integer.parseInt(args[1]);
 			int result = num1/num2;
 			System.out.println("연산 결과 : "+result);
+		 
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("프로그램 아규먼트를 2 개 전달하세요!!");
 		} catch (ArithmeticException e) {
@@ -17,9 +18,8 @@ public class ExceptionTest2 {
 			e.printStackTrace();
 			System.out.println("프로그램 아규먼트로 숫자를 전달하세요!!");
 		} catch (Exception e) {
-			System.out.println("예외 발생!!---"+e);
-		}
-		finally {
+			System.out.println("예외 발생 : " + e);
+		} finally {
 			System.out.println("항상 수행!!");
 		}
 		System.out.println("수행종료");

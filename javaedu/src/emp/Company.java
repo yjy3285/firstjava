@@ -53,28 +53,3 @@ public class Company {
         }
     }
 }
-
-//		System.out.println("name\t\tdepartment\t\tsalary\t\textra pay");
-//		printEmployee(emp);
-//		System.out.println("\n[ 인센티브 100 지급 ]");
-//		System.out.println("name\t\tdepartment\t\tsalary\t\ttax\t\textra pay");
-//		((Secretary) emp[0]).incentive(800);
-//		((Sales) emp[1]).incentive(1200);
-//		printEmployee(emp);
-//		
-//		
-//		
-//		}
-//		public static void printEmployee(Employee[] emp) {
-//			
-//			
-//			System.out.println("-----------------------------------------------------------------------------------------");
-//			
-//			for (Employee Employee : emp) {
-//				System.out.println(Employee.getName() + "\t\t" + Employee.getDepartment() + "\t\t" + Employee.getSalary());
-//			}
-//		
-//		 }
-//
-//
-//}
