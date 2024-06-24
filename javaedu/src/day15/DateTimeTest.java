@@ -19,7 +19,7 @@ public class DateTimeTest {
 		System.out.println(d.getTime());
 		
 		GregorianCalendar gc = new GregorianCalendar();
-		System.out.println(gc.get(GregorianCalendar.DAY_OF_WEEK));
+		System.out.println(gc.get(GregorianCalendar.DAY_OF_WEEK)); //일요일이 1 
 		gc = new GregorianCalendar(2024, 5, 3);// 0이 1월 11은 12월
 		System.out.println(gc.get(GregorianCalendar.DAY_OF_WEEK));
 

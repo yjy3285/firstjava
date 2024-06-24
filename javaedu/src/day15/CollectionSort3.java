@@ -19,7 +19,7 @@ class Person2 {
 	}	
 }
 
-class PersonComparator implements Comparator<Person2> {
+class Person2Comparator implements Comparator<Person2> {
 	@Override
 	public int compare(Person2 o1, Person2 o2) {
 		if (o1.age < o2.age)
@@ -41,7 +41,7 @@ public class CollectionSort3 {
 
 		System.out.println(list);
 				
-		list.sort(new PersonComparator());
+		list.sort(new Person2Comparator());
 		System.out.println("\nlist의 데이터들을 오름차순으로 소팅한 결과 : " + list);		
 	}
 }
