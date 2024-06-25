@@ -26,7 +26,7 @@ public class CountLab {
         int count = 0;
         int index = 0;
 
-        while ((index = line.indexOf(word, index)) != -1) {
+        while ((index = line.indexOf(word, index)) != -1) { //하나의 행에 yesterday가 2개 있더라도 다 찾아냄.
             count++;
             index += word.length();
         }

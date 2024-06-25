@@ -16,7 +16,7 @@ public class FileOutLab {
 			dir.mkdir();
 		}
 		try (FileWriter writer = new FileWriter("C:/Temp/event.txt", true);
-				PrintWriter out = new PrintWriter(writer);) {
+				PrintWriter out = new PrintWriter(writer);) { //append모드 아니라면 filewriter 객체 생성 안해도 됨.
 			LocalDate td = LocalDate.of(2024, 5, 5);
 			int yearNum = td.getYear();
 			int monthNum = td.getMonthValue();
