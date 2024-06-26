@@ -1,4 +1,4 @@
-package day16;
+package day17;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -8,12 +8,12 @@ import java.net.URL;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class URLTest11 {
+public class URLTest9 {
 
 	public static void main(String[] args) {
 		try {
 			URL req = new URL(
-					"http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/json/SeoulDisableLibraryInfo/1/10/");
+					"http://openapi.seoul.go.kr:8088/796143536a756e69313134667752417a/json/LampScpgmtb/1/100/");
 
 			InputStream is = req.openStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
@@ -27,18 +27,14 @@ public class URLTest11 {
 			}
 			
 			JSONObject obj = new JSONObject(bf.toString());
-			System.out.println(obj.toString());
-			System.out.println();
 
-			JSONObject lamp = obj.getJSONObject("SeoulDisableLibraryInfo");
+			System.out.println(obj.toString());
+			System.out.println(obj.keySet()); //최상위 레벨의 키만 추출됨.
+			JSONObject lamp = obj.getJSONObject("LampScpgmtb");
 			JSONArray row = lamp.getJSONArray("row");
 			
 			for(Object e : row) {
-				JSONObject jo = (JSONObject)e;
-				System.out.println(jo.getString("LBRRY_NAME"));	
-				System.out.println("\t"+jo.getString("ADRES"));	
-				System.out.println("\t"+jo.getString("OP_TIME"));	
-				System.out.println("\t"+jo.getString("FDRM_CLOSE_DATE"));	
+				System.out.println(((JSONObject)e).getString("CLS_NM"));	
 			}	
 		} catch (Exception e) {
 			System.out.println("오류 : " + e.getMessage());
