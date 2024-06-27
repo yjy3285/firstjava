@@ -1,4 +1,4 @@
-package day17;
+package day18;
 
 public class ThreadEx08 {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class ThreadEx08 {
 		ThreadB threadB = new ThreadB("ThreadB");
 		System.out.println("작업 스레드 이름: " + threadB.getName());
 
-		ThreadC threadC = new ThreadC();
+		ThreadC threadC = new ThreadC(); //따로 이름 안바꿔줘서 내부적으로 이름이 부여 되었다.
 		System.out.println("작업 스레드 이름: " + threadC.getName());
 		threadA.start();
 		threadB.start();
@@ -24,7 +24,7 @@ public class ThreadEx08 {
 
 class ThreadA extends Thread {
 	public ThreadA() {
-		setName("ThreadA");
+		setName("ThreadA"); //setname으로 뒤늦게 설정해줌, main메서드는 이미 호출됨, 그렇기에 이게 thread-0이 되었는데 이름 바꾼 것.
 	}
 
 	public void run() {

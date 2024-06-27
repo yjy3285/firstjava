@@ -1,4 +1,4 @@
-package day17;
+package day18;
 
 class FamilyThread2 extends Thread {
 	private Washroom2 wr;

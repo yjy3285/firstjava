@@ -1,11 +1,11 @@
-package day17;
+package day18;
 
 class ThreadEx14 implements Runnable {
 	static boolean autoSave = false;
 
 	public static void main(String[] args) {
 		Thread t = new Thread(new ThreadEx14());
-		t.setDaemon(true); // 이 부분이 없으면 종료되지 않는다.
+		//t.setDaemon(true); // 이 부분이 없으면 종료되지 않는다.
 		t.start();
 
 		for (int i = 1; i <= 10; i++) {
@@ -15,7 +15,7 @@ class ThreadEx14 implements Runnable {
 			}
 			System.out.println(i);
 
-			if (i == 5)
+			if (i == 5) //5부터 true로 바꿔줌.
 				autoSave = true;
 		}
 

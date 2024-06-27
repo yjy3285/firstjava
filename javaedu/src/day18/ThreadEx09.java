@@ -1,4 +1,4 @@
-package day17;
+package day18;
 
 public class ThreadEx09 {
 	public static void main(String[] args) throws Exception {
@@ -16,7 +16,7 @@ public class ThreadEx09 {
 		threadA.start();
 		threadB.start();
 		threadC.start();
-		threadA.join();
+		threadA.join(); //메인스레드 일시정지됨 ->main 스레드 가장 마지막에 출력된다.
 		threadB.join();
 		threadC.join();
 

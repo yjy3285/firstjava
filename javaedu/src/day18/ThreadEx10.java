@@ -1,4 +1,4 @@
-package day17;
+package day18;
 
 public class ThreadEx10 {
 	public static void main(String[] args) {
@@ -10,8 +10,8 @@ public class ThreadEx10 {
 class StatePrintThread extends Thread {
 	private Thread targetThread;
 
-	public StatePrintThread(Thread targetThread) {
-		this.targetThread = targetThread;
+	public StatePrintThread(Thread targetThread) { //타켓스레드 상태를 프린트하는 기능의 스레드
+		this.targetThread = targetThread; //체크당하는 스레드
 	}
 
 	public void run() {
@@ -26,7 +26,7 @@ class StatePrintThread extends Thread {
 				break;
 			}
 			try {
-				// 0.5초간 일시 정지
+				// 0.05초간 일시 정지
 				Thread.sleep(50);
 			} catch (Exception e) {
 			}

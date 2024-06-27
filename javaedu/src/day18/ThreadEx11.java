@@ -1,4 +1,4 @@
-package day17;
+package day18;
 
 class NewThread implements Runnable {
 	public void run() {
@@ -23,7 +23,7 @@ class ThreadEx11 {
 				System.out.println("Main Thread: " + i);
 				Thread.sleep(1000);
 				//if(i == 4)
-				//	t.interrupt();
+				//t.interrupt();
 			}
 		} catch (InterruptedException e) {
 			System.out.println("Main thread interrupted.");

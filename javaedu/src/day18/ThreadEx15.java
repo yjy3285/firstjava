@@ -1,4 +1,4 @@
-package day17;
+package day18;
 
 class ThreadEx15 {
 	public static void main(String args[]) {
