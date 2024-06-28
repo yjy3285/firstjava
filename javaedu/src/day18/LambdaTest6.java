@@ -15,7 +15,7 @@ public class LambdaTest6 {
 		fi = x -> System.out.println(x);
 		fi.method2(2);
 
-		fi = System.out::println;
+		fi = System.out::println; //static 형
 		fi.method2(2);
 	}
 }

@@ -2,7 +2,7 @@ package day18;
 
 @FunctionalInterface
 interface MyFunctionalInterface5 {
-	public int[] method5(int size);
+	public int[] method5(int size); //size 값에 따른 배열 사이즈 리턴 해줌.
 }
 
 public class LambdaTest9 {

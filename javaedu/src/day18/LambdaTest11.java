@@ -32,7 +32,7 @@ public class LambdaTest11 {
 		System.out.println("오름차순 : 첫 번째 아규먼트를 기준으로 비교하는 Comparator 객체 전달 : " + list);
 
 		list = Arrays.asList("abc", "aaa", "bbb", "ccc");
-		Collections.sort(list, String::compareTo);
+		Collections.sort(list, String::compareTo); //첫번째 아규먼트 기준으로 함.
 		System.out.println("오름차순 : 첫 번째 아규먼트를 기준으로 비교하는 Comparator 객체 전달 : " + list);
 	}
 }

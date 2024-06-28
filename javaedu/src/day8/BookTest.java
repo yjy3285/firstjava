@@ -19,7 +19,15 @@ class Book {
         this.price = price;
     }
 
-    // 책 정보 추출 메서드
+    public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	// 책 정보 추출 메서드
     public String getInfo() {
         return title + " " + author + " " + price + "원";
     }
